@@ -1,0 +1,15 @@
+﻿<Window x:Class="Converter.ShowInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Converter"
+        mc:Ignorable="d"
+        Title="ShowInfo" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Name="TextBoxCHANGE" FontSize="20" Margin="0,72,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="352" Width="708"/>
+        <Label Content="Subnet Info" FontSize="36" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Height="67" Width="194"/>
+        <Button Click="GoMainMenu" Content="Back" Background="#FF6E7BA2" Foreground="White" FontSize="18" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.631,0.112" Height="28" Width="151"/>
+
+    </Grid>
+</Window>

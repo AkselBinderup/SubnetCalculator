@@ -1,0 +1,18 @@
+﻿<Window x:Class="Converter.SubnetWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Converter"
+        mc:Ignorable="d"
+        Title="SubnetWindow" Height="450" Width="800">
+    <Grid>
+
+        <TextBox HorizontalAlignment="Center" Name="subnet" GotFocus="IpAddressField" Margin="0,109,0,0" TextWrapping="Wrap" Text="Insert IP-Adress" VerticalAlignment="Top" Width="234" Height="30"/>
+        <Button Content="Calculate" Background="#FF6E7BA2" FontSize="18" Foreground="White" Click="buttonClickSubnetIPGET" HorizontalAlignment="Center" Margin="0,197,0,0" VerticalAlignment="Top" Height="32" Width="234"/>
+        <Label FontSize ="50" Content="Subnet calculator" HorizontalAlignment="Center" Margin="0,17,0,0" VerticalAlignment="Top" Height="87" Width="436" RenderTransformOrigin="0.965,0.686"/>
+        <TextBox HorizontalAlignment="Center" x:Name="subnet_Copy" GotFocus="SubnetField" Margin="0,152,0,0" TextWrapping="Wrap" Text="Insert subnet-mask" VerticalAlignment="Top" Width="234" Height="30"/>
+        <Button Click="GoMainMenu" Content="Back" Background="#FF6E7BA2" Foreground="White" FontSize="18" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.631,0.112" Height="34" Width="114"/>
+
+    </Grid>
+</Window>
