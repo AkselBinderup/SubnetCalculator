@@ -6,13 +6,23 @@
         xmlns:local="clr-namespace:Converter"
         mc:Ignorable="d"
         Title="SubnetWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-        <TextBox HorizontalAlignment="Center" Name="subnet" GotFocus="IpAddressField" Margin="0,109,0,0" TextWrapping="Wrap" Text="Insert IP-Adress" VerticalAlignment="Top" Width="234" Height="30"/>
-        <Button Content="Calculate" Background="#FF6E7BA2" FontSize="18" Foreground="White" Click="buttonClickSubnetIPGET" HorizontalAlignment="Center" Margin="0,197,0,0" VerticalAlignment="Top" Height="32" Width="234"/>
-        <Label FontSize ="50" Content="Subnet calculator" HorizontalAlignment="Center" Margin="0,17,0,0" VerticalAlignment="Top" Height="87" Width="436" RenderTransformOrigin="0.965,0.686"/>
-        <TextBox HorizontalAlignment="Center" x:Name="subnet_Copy" GotFocus="SubnetField" Margin="0,152,0,0" TextWrapping="Wrap" Text="Insert subnet-mask" VerticalAlignment="Top" Width="234" Height="30"/>
-        <Button Click="GoMainMenu" Content="Back" Background="#FF6E7BA2" Foreground="White" FontSize="18" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.631,0.112" Height="34" Width="114"/>
+        <TextBlock Text="Subnet Calculator" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,20,0,20"/>
 
+        <TextBox Grid.Row="1" Name="subnet" GotFocus="IpAddressField" Margin="0,10" TextWrapping="Wrap" Text="Insert IP Address" Width="300" Height="30" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <TextBox Grid.Row="2" x:Name="subnet_Copy" GotFocus="SubnetField" Margin="0,10" TextWrapping="Wrap" Text="Insert Subnet Mask" Width="300" Height="30" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <Button Grid.Row="3" Content="Calculate" Background="#6E7BA2" FontSize="18" Foreground="White" Click="buttonClickSubnetIPGET" Width="150" Height="40" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,10"/>
+
+        <Button Click="GoMainMenu" Content="Back" Background="#6E7BA2" Foreground="White" FontSize="18" Width="100" Height="40" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

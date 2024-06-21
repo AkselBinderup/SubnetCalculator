@@ -1,10 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Documents;
-
 namespace Converter
 {
     public class GetNetworkClass
@@ -35,9 +30,9 @@ namespace Converter
                 {
                     var firstOctet = Convert.ToInt64(splitAddress);
                     var controlBool = false;
-                    foreach (var privateRange in PrivateIPRanges)
+                    foreach (var (Start, End) in PrivateIPRanges)
                     {
-                        if (firstOctet >= privateRange.Start && firstOctet <= privateRange.End)
+                        if (firstOctet >= Start && firstOctet <= End)
                         {
                             controlBool = true;
                             break;

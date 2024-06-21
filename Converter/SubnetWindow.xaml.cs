@@ -14,7 +14,7 @@ namespace Converter
         }
         private void IpAddressField(object sender, RoutedEventArgs e)
         {
-            if(subnet.Text == "Insert IP-Adress")
+            if(subnet.Text == "Insert IP Address")
                 subnet.Text = string.Empty;
         }
         private static Dictionary<char, string> SubnetDictionary = new Dictionary<char, string>()
@@ -38,7 +38,7 @@ namespace Converter
             }
             else
             {
-                subnet_Copy.Text = "Invalid IP-Address";
+                subnet_Copy.Text = "Invalid IP Address";
             }
         }
         private void GoMainMenu(object sender, RoutedEventArgs e)

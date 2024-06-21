@@ -68,7 +68,6 @@
     <Compile Include="Subnet\SubnetInfo.cs" />
     <Compile Include="Subnet\SubnetOperations\GetFullIp.cs" />
     <Compile Include="Subnet\SubnetOperations\GetNetworkClass.cs" />
-    <Compile Include="Test\Class1.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
